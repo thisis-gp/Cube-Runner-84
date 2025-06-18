@@ -41,7 +41,7 @@ TEXT_COLOR = (255, 255, 255)
 
 # Set up the display
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Neon Geometry Dash")
+pygame.display.set_caption("Cube Runner '84")
 clock = pygame.time.Clock()
 
 # Create sounds directory if it doesn't exist

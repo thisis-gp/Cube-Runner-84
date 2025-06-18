@@ -1,6 +1,6 @@
-# Neon Geometry Dash
+# Cube Runner '84
 
-A Pygame implementation of a Geometry Dash-like game with neon visual effects, dynamic backgrounds, and color-changing elements.
+A retro-styled arcade game with neon visual effects, dynamic backgrounds, and color-changing elements.
 
 ## Game Preview
 
@@ -60,7 +60,7 @@ pip install pygame
 ```
 3. Run the game:
 ```
-python geometry_dash.py
+python cube_runner_84.py
 ```
 
 ## How to Play
