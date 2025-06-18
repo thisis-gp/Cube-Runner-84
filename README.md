@@ -25,7 +25,14 @@ A Pygame implementation of a Geometry Dash-like game with neon visual effects, d
 - **Obstacle Types**:
   - Rectangular obstacles with varying sizes
   - Triangular obstacles to jump over
-- **Score System**: Points increase as you successfully avoid obstacles
+- **Score System**: 
+  - Points increase as you successfully avoid obstacles
+  - Time-based scoring (2 points per second)
+  - Final score displayed on game over screen
+- **Progressive Difficulty**:
+  - Game speed increases every 15 seconds
+  - "Speed Up" notifications
+  - Maximum speed cap for playability
 
 ## Controls
 
@@ -56,6 +63,15 @@ python geometry_dash.py
 2. Press the spacebar to jump over obstacles
 3. Avoid hitting rectangular and triangular obstacles
 4. Try to achieve the highest score possible
+5. The game gets faster every 15 seconds, increasing the challenge
+
+## Screenshots
+
+![Player Jump](screenshots/jump.png)
+*Player jumping over obstacles with trail effect*
+
+![Obstacle Types](screenshots/obstacles.png)
+*Different types of obstacles with neon glow effects*
 
 ## Implementation Details
 
@@ -66,6 +82,7 @@ The game is built using Pygame and features:
 - Dynamic visual effects using alpha blending and surface manipulation
 - Beat-based and timed color changes
 - Particle and trail effects
+- Progressive difficulty system
 
 ## Adding Your Own Features
 
@@ -76,6 +93,15 @@ You can easily extend the game by:
 - Implementing level designs
 - Adding sound effects and music
 - Creating different game modes
+
+## Creating Screenshots
+
+To add screenshots to this README:
+
+1. Create a `screenshots` directory in the project folder
+2. Take screenshots while playing the game (using your OS screenshot tools)
+3. Save the screenshots in the `screenshots` directory
+4. Update the image paths in this README if necessary
 
 ## License
 
