@@ -4,10 +4,10 @@ A Pygame implementation of a Geometry Dash-like game with neon visual effects, d
 
 ## Game Preview
 
-![Game Screenshot](screenshots/gameplay.png)
+![Game Screenshot](screenshots/gameplay2.png)
 *Screenshot of gameplay showing the player, obstacles, and neon background effects*
 
-![Game Over Screen](screenshots/game_over.png)
+![Game Over Screen](screenshots/game_over2.png)
 *Screenshot of the game over screen with neon effects*
 
 ## Features
@@ -33,6 +33,12 @@ A Pygame implementation of a Geometry Dash-like game with neon visual effects, d
   - Game speed increases every 15 seconds
   - "Speed Up" notifications
   - Maximum speed cap for playability
+- **Audio Features**:
+  - 8-bit style background music
+  - Sound effects for jumping, crashing, and speed increases
+  - Background color changes synchronized with music beats
+  - Player color changes on music beats 
+
 
 ## Controls
 
@@ -65,14 +71,6 @@ python geometry_dash.py
 4. Try to achieve the highest score possible
 5. The game gets faster every 15 seconds, increasing the challenge
 
-## Screenshots
-
-![Player Jump](screenshots/jump.png)
-*Player jumping over obstacles with trail effect*
-
-![Obstacle Types](screenshots/obstacles.png)
-*Different types of obstacles with neon glow effects*
-
 ## Implementation Details
 
 The game is built using Pygame and features:
@@ -83,6 +81,9 @@ The game is built using Pygame and features:
 - Beat-based and timed color changes
 - Particle and trail effects
 - Progressive difficulty system
+- Procedurally generated 8-bit sound effects and music
+- Audio-visual synchronization
+
 
 ## Adding Your Own Features
 
@@ -93,15 +94,6 @@ You can easily extend the game by:
 - Implementing level designs
 - Adding sound effects and music
 - Creating different game modes
-
-## Creating Screenshots
-
-To add screenshots to this README:
-
-1. Create a `screenshots` directory in the project folder
-2. Take screenshots while playing the game (using your OS screenshot tools)
-3. Save the screenshots in the `screenshots` directory
-4. Update the image paths in this README if necessary
 
 ## License
 
