@@ -2,6 +2,12 @@
 
 A retro-styled arcade game with neon visual effects, dynamic backgrounds, and color-changing elements.
 
+## Play Online
+
+**[Play Cube Runner '84 Now!](https://thisis-gp.github.io/Cube-Runner-84/)**
+
+The game is deployed and playable directly in your browser - no installation required!
+
 ## Game Preview
 
 ![Game Screenshot](screenshots/gameplay2.png)
