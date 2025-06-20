@@ -483,6 +483,13 @@ frameborder="1"
         window.frames["iframe"].location = url;
     }
 
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'r' || event.key === 'R') {
+            window.onbeforeunload = null;
+            window.location.reload();
+        }
+    });
+
     </script>
 
 </body>
