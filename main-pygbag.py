@@ -3,7 +3,7 @@ import random
 import sys
 import math
 import os
-from datetime import datetime
+import asyncio
 
 # Initialize Pygame
 pygame.init()
@@ -204,7 +204,7 @@ class SoundManager:
     
     def _save_wav_to_file(self, buf, sample_rate):
         """Save buffer as a WAV file and return the filename"""
-        filename = "sounds/music_loop.wav"
+        filename = "sounds/music_loop.ogg"
         
         # Save the music file
         with open(filename, "wb") as f:
@@ -234,7 +234,7 @@ class SoundManager:
     def start_music(self):
         """Start playing the music loop"""
         try:
-            pygame.mixer.music.load("sounds/music_loop.wav")
+            pygame.mixer.music.load("sounds/music_loop.ogg")
             pygame.mixer.music.set_volume(0.5)
             pygame.mixer.music.play(-1)  # Loop indefinitely
             self.music_playing = True
@@ -626,7 +626,8 @@ def show_speed_up_notification():
     screen.blit(glow_surf, (text_rect.x - 10, text_rect.y - 10))
     
     screen.blit(text, text_rect)
-def main():
+
+async def main():
     # Game variables
     game_speed = INITIAL_GAME_SPEED
     player = Player()
@@ -744,6 +745,8 @@ def main():
         # Update the display
         pygame.display.flip()
         clock.tick(60)
+        await asyncio.sleep(0)
 
-if __name__ == "__main__":
-    main()
+asyncio.run(main())
+
+
